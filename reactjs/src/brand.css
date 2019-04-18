@@ -1,0 +1,99 @@
+/**
+******** BRAND *********
+**/
+
+.heading {
+  margin-bottom: 20px;
+  vertical-align: bottom;
+  color: var(--primary-color);
+}
+
+.headingSecondary {
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+.link,
+
+.link__delete {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 4px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--active-color);
+  border: none;
+  border-bottom: 1px solid var(--active-color);
+  outline: none;
+  background: none;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+.linkSecondary,
+
+.link__delete {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.button {
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fdfdfd;
+  border: none;
+  outline: none;
+  background-color: var(--active-color);
+}
+
+reactjs/src/header/styles.module.css
+
+/**
+******** HEADER *********
+**/
+
+.header {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+.header__brand,
+
+.header__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  border-color: var(--white);
+  composes: link from "../brand.css";
+}
+
+.header__link {
+  margin-left: 20px;
+  border-bottom: 1px solid var(--white);
+}
+
+.header__brand {
+  font-size: 22px;
+  margin: 0;
+  border: none;
+}
+
+.header__container {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

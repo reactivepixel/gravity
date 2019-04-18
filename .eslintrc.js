@@ -15,6 +15,8 @@ module.exports = {
     "navigator": true,
     "window": true,
     "it": true,
-    "describe": true
-	}
+    "describe": true,
+    "localStorage": true
+  },
+  "parser": "babel-eslint"
 }
