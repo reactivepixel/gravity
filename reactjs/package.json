@@ -1,21 +1,76 @@
 {
-  "name": "reactjs",
-  "version": "0.1.0",
+  "name": "gravity-react-client",
+  "version": "1.0.0",
+  "description": "Custom CRM for Apextion Clients",
+  "author": {
+    "name": "Chapman",
+    "url": "https://apextion.com",
+    "github": "https://github.com/reactivepixel",
+    "twitter": "https://twitter.com/_chapman"
+  },
+  "contributors": [],
+  "homepage": ".",
+  "copyright": "Copyright 2019 Apextion, LLC - Christopher Chapman",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "dependencies": {
-    "axios": "^0.18.0",
+    "@coreui/coreui-plugin-chartjs-custom-tooltips": "^1.2.0",
+    "@coreui/coreui-pro": "^2.1.7",
+    "@coreui/icons": "^0.3.0",
+    "@coreui/react": "^2.1.5",
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.7.3",
+    "classnames": "^2.2.6",
+    "codemirror": "^5.44.0",
+    "core-js": "^2.6.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "flag-icon-css": "^3.3.0",
+    "font-awesome": "^4.7.0",
+    "formik": "^1.5.1",
+    "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-router-prop-types": "^1.0.4",
+    "react-app-polyfill": "^0.2.2",
+    "react-big-calendar": "0.19.2",
+    "react-bootstrap-table": "4.3.1",
+    "react-chartjs-2": "^2.7.4",
+    "react-codemirror2": "^5.1.0",
+    "react-dates": "^18.5.0",
+    "react-dom": "^16.8.4",
+    "react-google-maps": "9.4.5",
+    "react-grid-layout": "^0.16.6",
+    "react-ladda": "6.0.0",
+    "react-loadable": "^5.5.0",
+    "react-quill": "1.3.3",
+    "react-router-config": "^4.4.0-beta.6",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^1.3.0",
+    "react-test-renderer": "^16.8.4",
+    "react-text-mask-hoc": "^0.11.0",
+    "react-toastify": "^4.5.2",
+    "reactstrap": "^7.1.0",
+    "simple-line-icons": "^2.4.1",
+    "spinkit": "1.2.5",
+    "yup": "^0.26.10"
+  },
+  "devDependencies": {
+    "mutationobserver-shim": "^0.3.3",
     "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:cov": "react-scripts test --coverage",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
     "eject": "react-scripts eject"
+  },
+  "bugs": {
+    "url": "https://github.com/coreui/coreui-pro-react-admin-template-starter/issues"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -23,7 +78,15 @@
   "browserslist": [
     ">0.2%",
     "not dead",
-    "not ie <= 11",
+    "not ie <= 10",
     "not op_mini all"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  }
 }

@@ -1,68 +1,142 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CoreUI Pro React Admin Template Starter `v2`
 
-## Available Scripts
+CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+* [Versions](#versions)
+* [CoreUI Pro](#coreui-pro)
+* [Installation](#installation)
+* [Usage](#usage)
+* [What's included](#whats-included)
+* [Documentation](#documentation)
+* [Versioning](#versioning)
+* [Creators](#creators)
+* [Community](#community)
+* [Copyright and License](#copyright-and-license)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Versions
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* [CoreUI Pro Bootstrap Admin Template](https://github.com/coreui/coreui-pro-bootstrap-admin-template)
+* [CoreUI Pro Bootstrap Admin Template (Ajax)](https://github.com/coreui/coreui-pro-bootstrap-admin-template-ajax)
+* [CoreUI Pro Angular 2+ Admin Template](https://github.com/coreui/coreui-pro-angular-admin-template)
+* 🚧 CoreUI Pro .NET Core 2 Admin Template (Available Soon)
+* [CoreUI Pro React.js Admin Template](https://github.com/coreui/coreui-pro-react-admin-template)
+* [CoreUI Pro Vue.js Admin Template](https://github.com/coreui/coreui-pro-vue-admin-template)
 
-### `npm test`
+**Only customers with [Membership Plan](https://coreui.io/pro/#buy) have access to private github repositories.**
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## CoreUI Pro
 
-### `npm run build`
+* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/)
+* 💪  [CoreUI Pro Bootstrap Admin Template (Ajax)](https://coreui.io/pro/)
+* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/pro/angular)
+* 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
+* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Clone repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Only customers with [Membership Plan](https://coreui.io/pro/#buy) have access to private github repository.**
 
-### `npm run eject`
+``` bash
+# clone the repo
+$ git clone https://github.com/coreui/coreui-pro-react-admin-template.git my-project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# go into app's directory
+$ cd my-project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# install app's dependencies
+$ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Copy and Paste
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Copy all your files to your project folder and then,
 
-## Learn More
+``` bash
+# go into app's directory
+$ cd my-project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# install app's dependencies
+$ npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Create React App
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-### Code Splitting
+see also:
+[User Guide](CRA.md)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Basic usage
 
-### Analyzing the Bundle Size
+``` bash
+# dev server  with hot reload at http://localhost:3000
+$ npm start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
 
-### Making a Progressive Web App
+### Build
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
 
-### Advanced Configuration
+```bash
+# build for production with minification
+$ npm run build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## What's included
 
-### Deployment
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```
+CoreUI-React#v2.0.0
+├── public/          #static files
+│   ├── assets/      #assets
+│   └── index.html   #html temlpate
+│
+├── src/             #project root
+│   ├── containers/  #container source
+│   ├── scss/        #user scss/css source
+│   ├── views/       #views source
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.js
+│   ├── _nav.js      #sidebar config
+│   └── routes.js    #routes config
+│
+└── package.json
+```
 
-### `npm run build` fails to minify
+## Documentation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The documentation for the CoreUI  Admin Template is hosted at our website [CoreUI for React](https://coreui.io/react/)
+
+
+## Versioning
+
+For transparency into our release cycle and in striving to maintain backward compatibility, CoreUI Pro Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+
+See [the Releases section of our project](https://github.com/coreui/coreui-pro-react-admin-template/releases) for changelogs for each release version.
+
+## Creators
+
+**Łukasz Holeczek**
+* <https://twitter.com/lukaszholeczek>
+* <https://github.com/mrholek>
+
+**Andrzej Kopański**
+* <https://github.com/xidedix>
+
+## Community
+
+Get updates on CoreUI's development and chat with the project maintainers and community members.
+
+- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
+- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
+
+## Copyright and License
+
+copyright 2018 creativeLabs Łukasz Holeczek.

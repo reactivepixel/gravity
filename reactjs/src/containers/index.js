@@ -1,2 +1,3 @@
-// eslint-disable-next-line
-export { default as AuthContainer } from './auth';
+import DefaultLayout from './DefaultLayout';
+
+export { DefaultLayout };

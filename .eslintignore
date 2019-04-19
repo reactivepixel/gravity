@@ -1,3 +1,4 @@
 node_modules/
-
-reactjs/src/serviceWorker.js
+**/*test.js
+**/serviceWorker.js
+**/polyfill.js

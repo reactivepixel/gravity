@@ -1,21 +1,25 @@
-/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import styles from './app.module.css';
-import Header from './header';
-import Login from './login';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+// import { renderRoutes } from 'react-router-config';
+import Loadable from 'react-loadable';
+import './App.scss';
+
+const loading = () => <div className="animated fadeIn pt-3 text-center"><div className="sk-spinner sk-spinner-pulse" /></div>;
+
+// Containers
+const DefaultLayout = Loadable({
+  loader: () => import('./containers/DefaultLayout'),
+  loading,
+});
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className={styles.body}>
-          <Route path="/" component={Header} />
-          <main className={styles.main__container}>
-            <Route path="/login" exact component={Login} />
-          </main>
-        </div>
-      </Router>
+      <HashRouter>
+        <Switch>
+          <Route path="/" name="Home" component={DefaultLayout} />
+        </Switch>
+      </HashRouter>
     );
   }
 }
