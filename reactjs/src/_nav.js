@@ -24,7 +24,7 @@ export default {
       icon: 'icon-people',
     },
     {
-      name: '3rd Party Accounts',
+      name: 'Social Accounts',
       url: '/theme/colors',
       icon: 'icon-layers',
     },
