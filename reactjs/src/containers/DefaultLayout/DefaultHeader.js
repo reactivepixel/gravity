@@ -1,14 +1,13 @@
 import React from 'react';
-import { DropdownMenu, DropdownToggle, Nav } from 'reactstrap';
+import { Nav } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 import {
-  AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler,
+  AppNavbarBrand, AppSidebarToggler,
 } from '@coreui/react';
 
 import logo from '../../assets/img/brand/Logo@1x.svg';
 import sygnet from '../../assets/img/brand/sygnet.svg';
-import avatar from '../../assets/img/avatars/6.jpg';
 
 const propTypes = {
   // eslint-disable-next-line
@@ -35,16 +34,16 @@ class DefaultHeader extends React.Component {
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
         <Nav className="ml-auto" navbar>
-          <AppHeaderDropdown>
+          {/* <AppHeaderDropdown>
             <DropdownToggle nav>
               <img src={avatar} className="img-avatar" alt="admin@bootstrapmaster.com" />
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto', height: '400px' }}>
               AppHeaderDropdown
             </DropdownMenu>
-          </AppHeaderDropdown>
+          </AppHeaderDropdown> */}
         </Nav>
-        <AppAsideToggler className="d-md-down-none" />
+        {/* <AppAsideToggler className="d-md-down-none" /> */}
         {/* <AppAsideToggler className="d-lg-none" mobile /> */}
       </React.Fragment>
     );
