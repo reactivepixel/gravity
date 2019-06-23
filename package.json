@@ -8,7 +8,8 @@
     "dev:react": "concurrently --raw \"npm run api\" \"npm run react\"",
     "react": "cd reactjs && npm run start",
     "api": "cd api; nodemon server.js",
-    "start": "npm run dev:react"
+    "start": "npm run dev:react",
+    "dirtyInstall": "npm i; cd api; npm i; cd ../reactjs; npm i; touch .env; cd ..;"
   },
   "keywords": [],
   "author": "Chapman",
